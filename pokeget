@@ -1,0 +1,4 @@
+legendaries=("mew" "mewtwo" "moltres" "zapdos" "articuno" "ho-oh" "lugia" "celebi" "entei" "suicune" "raikou" "regirock" "registeel" "regice" "latias" "latios" "kyogre$
+
+random_pokemon="${legendaries[$RANDOM % ${#legendaries[@]}]}"
+pokeget "$random_pokemon" -s --hide-name
