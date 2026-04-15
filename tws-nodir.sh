@@ -5,6 +5,9 @@ shopt -s nullglob
 dir=""
 wallpapers=("$dir"/*)
 
+echo "Syncing..."
+git -C "$dir" pull origin main
+
 echo "Pick a wallpaper:"
 
 select wallpaper in "${wallpapers[@]##*/}"; do
